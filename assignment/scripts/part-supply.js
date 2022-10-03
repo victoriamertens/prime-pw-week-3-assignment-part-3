@@ -60,8 +60,8 @@ for(order of supplyChanges)
 let counter = 0; 
 console.log(supplyChanges);
 for(let index = 0; index<supplyChanges.length; index++)
-{counter = counter + supplyChanges[index]; 
-}
+    {counter = counter + supplyChanges[index]; 
+}//end for loop 
 console.log('8. Total supplies available is:', counter);
 
 // 9. We have a large stash of parts in our warehouse that we 
@@ -74,8 +74,8 @@ console.log('8. Total supplies available is:', counter);
 let counterParts = 0; 
 let currentParts = 572; 
 while (currentParts > 6)
-{currentParts = currentParts - 7; 
-    counterParts++;}; 
+    {currentParts = currentParts - 7; 
+    counterParts++;}//end while loop 
 
 console.log('9. Filling boxes with a "while" loop');
 console.log('Boxes filled:', counterParts); 
