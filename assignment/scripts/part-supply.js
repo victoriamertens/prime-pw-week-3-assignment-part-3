@@ -31,12 +31,12 @@ console.log('5. Adding 25 to supplyChanges.');
 console.log(supplyChanges);
 console.log('6. Showing supplyChanges...');
 for(let index=0; index<supplyChanges.length; index++)
-  {if (supplyChanges[index]>0)
-        {console.log('Added', supplyChanges[index], 'parts')//end first if statement before curly bracket
-  } else if (supplyChanges[index]===0)
-        {console.log('No Change')//end of else if statement before curly
-  } else if (supplyChanges[index]<0)
-        {console.log("Removed", (supplyChanges[index]*-1), "parts")
+  {if (supplyChanges[index]>0) {
+        console.log('Added', supplyChanges[index], 'parts')//end first if statement before curly bracket
+  } else if (supplyChanges[index]===0) {
+        console.log('No Change')//end of else if statement before curly
+  } else if (supplyChanges[index]<0) {
+        console.log("Removed", (supplyChanges[index]*-1), "parts")
   }//end final else if statement 
 }//end the for loop 
 
@@ -47,20 +47,20 @@ console.log('---  Stretch Goals  ---');
 // 7. Rewrite the `for` loop from #6 as a `for of` loop. 
 console.log('7. Showing supplyChanges with "for of" loop');
 for(order of supplyChanges)
-  { if(order>0)
-    {console.log('Added', order, 'parts'); 
-  } else if (order===0)
-    {console.log('No Change'); 
-  } else if (order<0)
-    {console.log("Removed", (order*-1), "parts"); 
+  { if(order>0) {
+    console.log('Added', order, 'parts'); 
+  } else if (order===0) {
+    console.log('No Change'); 
+  } else if (order<0) {
+    console.log("Removed", (order*-1), "parts"); 
   }//end of if statement 
 } //end of for of loop 
 
 // 8. Write a loop to determine the total number of parts available by
 //    adding up all the numbers in the 'supplyChanges' array.
 let counter = 0; 
-for(let index = 0; index<supplyChanges.length; index++)
-  {counter = counter + supplyChanges[index]; 
+for(let index = 0; index<supplyChanges.length; index++) {
+  counter = counter + supplyChanges[index]; 
   }//end for loop 
 console.log('8. Total supplies available is:', counter);
 
@@ -73,8 +73,8 @@ console.log('8. Total supplies available is:', counter);
 
 let counterParts = 0; 
 let currentParts = 572; 
-while (currentParts > 6)
-  {currentParts = currentParts - 7; 
+while (currentParts > 6) {
+  currentParts = currentParts - 7; 
   counterParts++;
   }//end while loop 
 
